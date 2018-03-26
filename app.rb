@@ -2,12 +2,12 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
 
-  get '/' do 
+  get '/' do
     erb :index
-  end 
+  end
 
-  get '/index' do 
-    erb :index 
+  post '/create_puppy' do 
+    erb :create_puppy
   end
 
 end
